@@ -7,7 +7,7 @@ class AlertScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Alert Pantalla"),
+        child: Text("Alert Screen"),
       ),
     );
   }
