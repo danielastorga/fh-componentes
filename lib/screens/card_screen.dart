@@ -21,7 +21,6 @@ class CardScreen extends StatelessWidget {
             MyCard2Widget(
               url:
                   "https://www.wallpaperflare.com/static/640/609/100/photo-manipulation-trees-digital-art-landscape-wallpaper-preview.jpg",
-              subtitle: "Un árbol en la llanura",
             ),
             MyCard2Widget(
               url:

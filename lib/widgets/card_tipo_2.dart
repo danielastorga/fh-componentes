@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class MyCard2Widget extends StatelessWidget {
   final String url;
-  final String subtitle;
-  const MyCard2Widget({Key? key, required this.url, required this.subtitle})
+  final String? subtitle;
+  const MyCard2Widget({Key? key, required this.url, this.subtitle})
       : super(key: key);
 
   @override
@@ -29,10 +29,11 @@ class MyCard2Widget extends StatelessWidget {
             fit: BoxFit.cover,
             fadeInDuration: Duration(milliseconds: 300),
           ),
-          Container(
-              padding: EdgeInsets.only(top: 10.0, right: 10.0, bottom: 10.0),
-              alignment: AlignmentDirectional.centerEnd,
-              child: Text(subtitle)),
+          if (subtitle != null)
+            Container(
+                padding: EdgeInsets.only(top: 10.0, right: 10.0, bottom: 10.0),
+                alignment: AlignmentDirectional.centerEnd,
+                child: Text(subtitle ?? "No Title")),
         ],
       ),
     );
